@@ -1,0 +1,7 @@
+{
+  "name": "Murmester Halvorsen AS",
+  "description": "Profesjonell nettside for Murmester Halvorsen AS, med fokus på kvalitet, tradisjon og solid murerhåndverk.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

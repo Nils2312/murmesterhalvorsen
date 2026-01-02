@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primær SEO -->
+    <title>Murmester Halvorsen AS | Murer i Ringebu & Gudbrandsdalen</title>
+    <meta name="description" content="Autorisert Murmester Halvorsen AS utfører alt innen mur, puss, naturstein og piperehabilitering i Ringebu og Gudbrandsdalen. Solid murerhåndverk siden 2018. Få gratis befaring!" />
+    <meta name="keywords" content="murer ringebu, murarbeid gudbrandsdalen, naturstein mur, skiferlegging, piperehabilitering, murmester halvorsen, flislegger ringebu" />
+    <link rel="canonical" href="https://murmesterhalvorsen.no/" />
+
+    <!-- Open Graph (Facebook/Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Murmester Halvorsen AS | Kvalitetsmurer i Gudbrandsdalen" />
+    <meta property="og:description" content="Solid murerhåndverk i Ringebu og omegn. Spesialister på naturstein, skifer og tradisjonelt murarbeid." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200" />
+    <meta property="og:url" content="https://murmesterhalvorsen.no/" />
+
+    <!-- Schema.org - Strukturert data for Google (Viktig for lokal SEO og menyer) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Murmester Halvorsen AS",
+      "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12",
+      "@id": "https://murmesterhalvorsen.no",
+      "url": "https://murmesterhalvorsen.no",
+      "telephone": "+4795763991",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gudbrandsdalsvegen 2094",
+        "addressLocality": "Ringebu",
+        "postalCode": "2630",
+        "addressCountry": "NO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 61.53051,
+        "longitude": 10.138249
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "16:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/murmesterhalvorsen",
+        "https://www.instagram.com/murmesterhalvorsen/"
+      ],
+      "areaServed": ["Ringebu", "Gudbrandsdalen", "Lillehammer", "Øyer", "Fåvang"]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                DEFAULT: '#eb692d',
+                dark: '#c45421',
+                light: '#f28c5a',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            screens: {
+              'xs': '400px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        scroll-behavior: smooth;
+        background-color: #fcfcfc;
+        background-image: 
+          linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+        background-size: 60px 25px, 60px 50px, 60px 50px;
+        background-position: 0 0, 0 0, 30px 25px;
+        background-attachment: scroll;
+      }
+
+      .brick-pattern {
+        background-color: #eb692d;
+        background-image:  linear-gradient(rgba(255,255,255,.1) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(255,255,255,.1) 1.5px, transparent 1.5px),
+        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+        background-size: 60px 60px, 60px 60px, 15px 15px, 15px 15px;
+        background-position:-1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px;
+      }
+
+      #root {
+        position: relative;
+        z-index: 10;
+      }
+
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-gray-900 font-sans antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
